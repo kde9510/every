@@ -1,11 +1,171 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta property="og:title" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://webdesign.dothome.co.kr/">
+    <meta property="og:image" content="http://dueun.dothome.co.kr/every/yami.jpg/">
+    <meta property="og:description" content="">
+    <link rel="stylesheet" href="css/default.css">
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>doTERRA</title>
 </head>
+
 <body>
-    
+    <h1 class="notext">doTERRA</h1>
+    <div class="hot_item">
+        <a href="#"><img src="images/visual_item.png" alt="hot hot_item"></a>
+    </div>
+    <div class="header-container">
+        <div id="header">
+            <div class="logo">
+                <a href="#">
+                    <img src="images/logo.png" alt="로고">
+                </a>
+            </div>
+            <div class="nav">
+                <ul id="gnb">
+                    <li><a href="#">company</a>
+                        <ul class="lnb">
+                            <li><a href="#">ceo</a></li>
+                            <li><a href="#">hisrory</a></li>
+                            <li><a href="#">part</a></li>
+                            <li><a href="#">certification</a></li>
+                            <li><a href="#">map</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">product</a>
+                        <ul class="lnb">
+                            <li><a href="#">cleasing</a></li>
+                            <li><a href="#">skin</a></li>
+                            <li><a href="#">perfume</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" onclick="javascript:alert('서비스 점검중입니다');">schedule</a></li>
+                    <li><a href="#">cs center</a>
+                        <ul class="lnb">
+                            <li><a href="#">faq</a></li>
+                            <li><a href="#">news</a></li>
+                            <li><a href="#">q&amp;a</a></li>
+                            <li><a href="#">mou</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="files/catalogue.pdf" download>catalogue</a></li>
+                </ul>
+            </div>
+            <ul class="user">
+                <li><a href="#">login</a></li>
+                <li><a href="#">join</a></li>
+            </ul>
+            <div id="burger" class="mobile">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <!--============= #header 끝==============-->
+    <div id="heroImg">
+        <img src="images/visual_slogan.png" alt="doTERRA everyday" class="slogan_text">
+    </div>
+    <div class="promo_etc_container">
+        <div id="promotion">
+            <h2>promotion</h2>
+            <ul class="promo-list">
+                <li><a href="#"><img src="images/promotion_img1.jpg" alt="프로모션1"></a></li>
+                <li><a href="#"><img src="images/promotion_img2.jpg" alt="프로모션2"></a></li>
+            </ul>
+        </div>
+        <div id="etc">
+            <div class="webzine">
+                <a href="#" class="view_btn">
+                    <img src="images/cate_btn1.png" alt="view1">
+                </a>
+                <img src="images/cate_img1.jpg" alt="카테고리1">
+            </div>
+            <div class="catalogue">
+                <a href="#" class="view_btn">
+                    <img src="images/cate_btn2.png" alt="view2">
+                </a>
+                <img src="images/cate_img2.jpg" alt="카테고리2">
+            </div>
+            <div class="event-calendar">
+                <a href="#" class="view_btn">
+                    <img src="images/cate_btn3.png" alt="view3">
+                </a>
+                <img src="images/cate_img3.jpg" alt="카테고리3">
+            </div>
+        </div>
+    </div>
+    <div id="banner">
+        <figure>
+            <!-- div 보다 강조하고싶을떄 figure (검색엔진이 안지나침) -->
+            <img src="images/banner.jpg" alt="clean business 2020 plan">
+            <figcaption class="notext">clean business 2020 plan</figcaption>
+        </figure>
+    </div>
+    <div class="video_container">
+        <div id="video">
+            <h3>video</h3>
+            <ul class="video-list">
+                <li>
+                    <a href="#" class="play">
+                        <img src="images/video_btn.png" alt="영상클립 재생">
+                    </a>
+                    <img src="images/video_img1.jpg" alt="영상클립1">
+                </li>
+                <li>
+                    <a href="#" class="play">
+                        <img src="images/video_btn.png" alt="영상클립 재생">
+                    </a>
+                    <img src="images/video_img2.jpg" alt="영상클립2">
+                </li>
+                <li>
+                    <a href="#" class="play">
+                        <img src="images/video_btn.png" alt="영상클립 재생">
+                    </a>
+                    <img src="images/video_img3.jpg" alt="영상클립3">
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="aside-container">
+        <div id="aside">
+            <ul class="sns-icons">
+                <li><a href="#"><img src="images/sns1.png" alt="facebook"></a></li>
+                <li><a href="#"><img src="images/sns2.png" alt="blog"></a></li>
+                <li><a href="#"><img src="images/sns3.png" alt="insta"></a></li>
+                <li><a href="#"><img src="images/sns4.png" alt="story"></a></li>
+                <li><a href="#"><img src="images/sns5.png" alt="youtube"></a></li>
+            </ul>
+            <ul class="docs-icons">
+                <li><a href="files/guidelline.pdf" download>온라인 판매 가이드라인</a></li>
+                <li><a href="files/require.pdf" download>웹사이트 사전 심의 요청서</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-container">
+        <div id="footer">
+            <div class="footer_logo">
+                <a href="#"><img src="images/footer_logo.png" alt="footer logo"></a>
+            </div>
+            <ul class="bnb">
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">이용안내</a></li>
+                <li><a href="#">개인정보취급방침</a></li>
+                <li><a href="#">고객센터</a></li>
+            </ul>
+            <p class="info">상호명 : 도테라코리아 대표 : 홍길동 사업자등록번호 : 220-80-59855 주소 : 서울특별시 서초구 강남대로 369, 8층(서초동, 나락빌딩) 고객센터 :
+                02-2137-5490</p>
+            <p class="copy">copyright(c) 2020. doTERRA. All Rights Reserved.</p>
+        </div>
+    </div>
 </body>
+
 </html>

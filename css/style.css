@@ -1,0 +1,236 @@
+@charset "utf-8";
+* {
+    scroll-behavior: smooth;  
+}
+body {
+    font-family:"Maven Pro", "Noto Sans KR", sans-serif;
+    font-size: 14px;
+    color:#666;
+}
+a,a:link {
+    color:inherit;
+    text-decoration:none;
+}
+.notext {
+    display:none;
+}
+.hot_item {
+    position: absolute; 
+    right:5%;
+    top:750px;
+    z-index:1000;
+}
+.header-container {
+    position: absolute;
+    top:0;
+    width: 100%;
+    background-color:#200e25;
+    opacity:.7; /* 투명도 */
+    border-top:1px solid #888;
+    border-bottom:1px solid #888;
+    z-index:1;
+}
+#header {
+    max-width:900px;
+    margin:0 auto;
+    display: flex;
+    padding:20px 0;
+}
+#gnb {
+    margin-left:100px;
+}
+#gnb li {
+    float :left;
+    padding:0 15px;
+    margin:0 5px;
+    line-height: 33px;
+}
+#gnb > li:nth-of-type(5) {
+    background-image:url("../images/topicon.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    padding-left:35px;
+    box-sizing:border-box;
+    height: 33px;
+}
+.lnb {
+    display: none;
+}
+.user {
+    margin-left: 50px;
+}
+.user li {
+    float:left;
+    line-height: 33px;
+}
+.user li:nth-child(2) {
+    margin-left:15px;
+}
+#burger.mobile {
+    display: none;
+}
+#heroImg {
+    position: relative;
+    height: 835px;
+    background-image:url("../images/visual_bg.jpg");
+    background-position:0 0;
+}
+.slogan_text {
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+}
+.promo_etc_container {
+    max-width: 1000px;
+    margin:0 auto;
+}
+#promotion h2 {
+    text-align: center ;
+    font-size: 30px;
+    color:#000000;
+    font-weight: 900;
+    margin:50px 0;
+    text-transform: capitalize;
+}
+.promo-list {
+    display: flex;
+}
+.promo-list img {
+    max-width:1000px;
+}
+.promo-list li:nth-child(2) {
+    margin-left:10px ;
+}
+#etc {
+    display: flex;
+    margin:150px 0 100px;
+}
+#etc > div {
+    width:calc(100% / 3);
+}
+#etc img {
+    max-width: 100%;
+}
+#etc > div:hover .view_btn {
+    display:block;
+}
+.view_btn {
+    position: absolute;
+    display: none;
+}
+.catalogue {
+    margin-right:10px;
+    margin-left:10px;
+}
+#banner {
+    display: flex;
+    justify-content: center;
+    background-color: #000000;
+    margin:50px auto;
+}
+#video {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+#video h3 {
+    font-size:30px;
+    color:#000000;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom:40px;
+    text-transform: capitalize;
+}
+.play {
+    display: none;
+    position: absolute;
+}
+.video-list {
+    display: flex;
+}
+.video-list img {
+    max-width: 100%;
+}
+.video-list li:nth-child(2) {
+    padding:0 10px;
+}
+.video-list li:hover .play {
+    display: block;
+}
+.aside-container {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding:15px 0;
+    margin:50px 0;
+}
+#aside {
+    max-width: 1000px;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between; /*수평의 배치 */
+    align-items: center; /*수직의 배치 */
+}
+.sns-icons, .docs-icons {
+    display: flex;
+}
+.sns-icons li {
+    margin-right:10px;
+}
+.docs-icons li {
+    padding-left: 20px;
+    margin-left:10px;
+    font-size: 14px;
+    color:#000000;
+}
+.docs-icons li:nth-child(1) {
+    background-image:url(../images/footer_icon1.png);
+    background-repeat: no-repeat;  /* 아이콘 반복 x 코드 */
+    background-position:0 0;
+}
+.docs-icons li:nth-child(2) {
+    background-image:url(../images/footer_icon2.png);
+    background-repeat: no-repeat;
+    background-position:0 0;
+}
+.footer-container {
+    display:flex;
+    justify-content: center;
+}
+#footer {
+    width: 1000px;
+}
+.bnb {
+    display: flex;
+    margin:20px 0;
+    font-size:15px;
+    color:#222222;
+    font-weight: 500;
+}
+.bnb li {
+    position: relative;
+    margin-right: 15px;
+}
+.bnb li::after {
+    content:'';
+    display: inline-block;
+    position: absolute;
+    top:3px;
+    left:-7px;
+    width:1px;
+    height: 10px;
+    background: #333333;
+}
+.bnb li:nth-child(1)::after {
+    display:none;
+}
+.info {
+    letter-spacing: -1px;
+    font-size:13px;
+    color:#555555;
+}
+.copy {
+    margin:15px 0;
+    text-transform: capitalize;
+    font-size:11px;
+    color:#777777;
+}
